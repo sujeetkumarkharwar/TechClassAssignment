@@ -5,18 +5,18 @@ public class polindrom {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the number:");
         int n=sc.nextInt();
-        int x=0;
+        int x=n;
         int rev=0;
         while(n!=0){
             int ld=n%10;
-            rev*=10+ld;
+            rev=rev*10+ld;
             n=n/10;
 
         }
-        if(x==n){
-            System.out.println(n+" polindrome");
+        if(rev==x){
+            System.out.println(x+" polindrome");
         }else{
-            System.out.println(n+" is not polindrome");
+            System.out.println(x+" is not polindrome");
         }
     }
     
